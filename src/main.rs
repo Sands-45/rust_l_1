@@ -1,9 +1,12 @@
 use std::io; // input or output library that somes from standard library also know as std
+use rand::Rng; // importing rand
 
 fn main() {
     println!("Guess the number!");
 
     println!("Please input your guess.");
+
+        let secret_number = rand::thread_rng().gen_range(1..=100);
 
     // we create a variable using "let" and then use the key word "mut" so the value is mutable
     // "String" is a string type provided by the standard library that is a growable, UTF-8 encoded bit of text.
